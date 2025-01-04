@@ -1,0 +1,32 @@
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.benefit-box {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+
+.connecting-arrow {
+  animation: fadeIn 0.5s ease-out forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes arrowGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(212, 183, 136, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 0 6px rgba(212, 183, 136, 0.4));
+  }
+}
+
+.arrow-glow {
+  animation: arrowGlow 3s ease-in-out infinite;
+}

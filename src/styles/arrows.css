@@ -1,0 +1,21 @@
+@keyframes arrowGlow {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(212, 183, 136, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 0 6px rgba(212, 183, 136, 0.4));
+  }
+}
+
+.arrow-glow {
+  animation: arrowGlow 3s ease-in-out infinite;
+}
+
+.arrow-hover {
+  transition: all 0.3s ease-in-out;
+}
+
+.arrow-hover:hover {
+  filter: drop-shadow(0 0 8px rgba(212, 183, 136, 0.6));
+  transform: scale(1.05);
+}
